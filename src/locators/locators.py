@@ -22,7 +22,7 @@ class Locators:
     ENTER_LINK = (By.XPATH, '//a[@href="/login"]')  # Кнопка войти в форме регистрации
     RECOVERY_PASSWORD_LINK = (By.XPATH, '//a[@href="/forgot-password"]')  # Восстановить пароль линк
     PERSONAL_ACCOUNT_LINK = (By.XPATH, '//a[@href="/account"]')  # Ссылка персональный аккаунт
-    PROFILE_SIDEBAR = (By.XPATH, '//ul[@class="Account_list__3KQQf mb-20"]')  # Сайдбар в лк
+    PROFILE_SIDEBAR = (By.XPATH, '//ul[contains(@Class, "Account_list")]')  # Сайдбар в лк
     PERSONAL_ACCOUNT_HINT = (By.XPATH, '//p[@class="Account_text__fZAIn text text_type_main-default"]')  # Подсказка в лк
     ASSEMBLE_A_BURGER_TITLE = (By.XPATH, '//h1[@class="text text_type_main-large mb-5 mt-10"]')  # Подсказка в лк
     PROFILE_BUTTON = (By.XPATH, '//a[@href="/account/profile"]') # Кнопка профиля
@@ -36,3 +36,4 @@ class Locators:
     SAUCES_TITLE = (By.XPATH, '//h2[text()="Соусы"]')  # Соусы заголовок
     BUNS_SECTION_BUTTON = (By.XPATH, '//div[@style="display: flex;"]/div[1]') # Кнопка булочки
     BUNS_TITLE = (By.XPATH, '//h2[text()="Булки"]') # Булочки заголвок
+    CURRENT_TABLE  = (By.XPATH, '//div[contains(@Class, "tab_tab_type_current")]')

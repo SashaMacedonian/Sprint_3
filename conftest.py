@@ -11,7 +11,7 @@ def chrome_browser():
 
 @pytest.fixture
 def config():
-    path = "/Users/davlikanov/Desktop/Sprint_3/config.json"
+    path = "config.json"
     with open(path, 'r') as file_object:
         data = json.load(file_object)
     return data
